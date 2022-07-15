@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+    /**mobil tasarım için uygun**/
+
+    }
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    /**html içerisinde 10px olsun istedik fakat body içerisinde 1.6rem dedik yani 10px*1,6 olur.
+    Özellikle responsive tasarımlarda sıkça kullanılır.**/
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    /**alt çizgi silindi**/
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+header {
+    height: 46rem;
+
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    /**kapsayıcı**/
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    /** h1 v p yazılarımız altta kalıyordu bunu engellemek için yaptık**/
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 0.5em;
+    padding: 0.8rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.6s;
+    /** mousela üzerine gelindiğinde yavaş şekilde renk değişimi olsun diye**/
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#section-a {
+    background-color: #eaeaeaea;
+    color: #333;
+    padding: 3.2rem;
+}
+
+img {
+    width: 100%;
+    /**içerisinde bulunduğu div in boyutlarını alsın **/
+    height: auto;
+}
+
+#section-b {
+    padding: 2rem;
+}
+
+#section-b ul {
+    list-style-type: none;
+    /**maddelerin başındaki noktaları siler.**/
+
+}
+
+#section-b li {
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+#section-c .content {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+
+}
+
+#section-c .content-2 {
+    background-color: darkslategrey;
+    padding: 5rem;
+}
+
+#section-c .content-3 {
+    background-color: darkgray;
+    padding: 5rem;
+}
+
+footer {
+    padding: 4rem;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+@media screen and (min-width:800px) {
+    html{
+        font-size: 9px;
+    }
+}
+@media screen and (min-width:1200px) {
+    
+    html {
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+
+    }
+    #section-c .content-3 {
+        width:50%;
+        float:left;
+    }
+    #section-c .content-2 {
+        width:50%;
+        float:left;
+    }
+}
